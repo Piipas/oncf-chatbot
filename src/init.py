@@ -1,6 +1,5 @@
 from chatterbot import ChatBot
 
-# Initialize the chatbot
 chatbot = ChatBot(
     'ONCFDSIChatbot',
     storage_adapter='chatterbot.storage.SQLStorageAdapter',
