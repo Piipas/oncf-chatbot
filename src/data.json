@@ -1,37 +1,50 @@
 {
     "dataset": [
-        ["Bonjour", "Bonjour! Comment puis-je vous aider?"],
+        ["Qui est le chef de service?", "Le chef de service est KASMI YAHYA."],
         [
-            "Je suis un nouvel stagiaire.",
-            "Bienvenue! De quoi avez-vous besoin pour commencer?"
+            "Quel est le nom du chef de service?",
+            "Le chef de service est KASMI YAHYA."
+        ],
+        ["Qui dirige le service?", "Le chef de service est KASMI YAHYA."],
+        [
+            "Pouvez-vous nommer les collaborateurs du service?",
+            "Les collaborateurs du service sont BENAMRI ABDELLATIF, ELQABECH ABDELAZIZ, et RAGALA ZAYNABE."
         ],
         [
-            "Pouvez-vous m'expliquer les tâches de la journée?",
-            "Bien sûr. Vous devez d'abord vérifier vos e-mails pour les nouvelles instructions."
+            "Quels sont les membres de l'équipe?",
+            "Les collaborateurs du service sont BENAMRI ABDELLATIF, ELQABECH ABDELAZIZ, et RAGALA ZAYNABE."
         ],
         [
-            "À qui puis-je demander de l'aide?",
-            "Vous pouvez demander de l'aide à votre superviseur ou à n'importe quel collègue."
+            "Qui travaille avec BENAMRI ABDELLATIF?",
+            "Les collaborateurs du service sont BENAMRI ABDELLATIF, ELQABECH ABDELAZIZ, et RAGALA ZAYNABE."
         ],
         [
-            "Quels outils vais-je utiliser?",
-            "Vous utiliserez principalement Google Workspace, Slack et GitHub."
+            "Quelles sont les missions principales du service SI Finances et Gestion?",
+            "Les missions principales sont de développer et maintenir les applications informatiques, appliquer les bonnes pratiques pour l'exploitation et la disponibilité, et assurer l'évolution et la sécurité de l'environnement."
         ],
         [
-            "Merci",
-            "De rien! Si vous avez d'autres questions, n'hésitez pas à demander."
+            "Quels sont les objectifs du service SI Finances et Gestion?",
+            "Les missions principales sont de développer et maintenir les applications informatiques, appliquer les bonnes pratiques pour l'exploitation et la disponibilité, et assurer l'évolution et la sécurité de l'environnement."
         ],
         [
-            "Quelles sont les horaires de travail?",
-            "Les horaires de travail sont de 9h à 17h, du lundi au vendredi."
+            "Quel est le rôle du service SI Finances et Gestion?",
+            "Les missions principales sont de développer et maintenir les applications informatiques, appliquer les bonnes pratiques pour l'exploitation et la disponibilité, et assurer l'évolution et la sécurité de l'environnement."
         ],
         [
-            "Où se trouve la cafétéria?",
-            "La cafétéria se trouve au rez-de-chaussée, près de l'entrée principale."
+            "Quelles sont les responsabilités du service SI Finances et Gestion?",
+            "Le service est responsable du développement du SI en alignement avec le SDSI, de la maintenance des applications informatiques, de la gestion des prestataires de solutions, de la production de la documentation de support, de l'archivage des composants système, de la surveillance des performances, et plus encore."
         ],
         [
-            "Comment puis-je accéder au réseau Wi-Fi?",
-            "Vous pouvez accéder au réseau Wi-Fi en utilisant le SSID 'ONCF' et le mot de passe fourni par le service informatique."
+            "Quelles tâches le service doit-il accomplir?",
+            "Le service est responsable du développement du SI en alignement avec le SDSI, de la maintenance des applications informatiques, de la gestion des prestataires de solutions, de la production de la documentation de support, de l'archivage des composants système, de la surveillance des performances, et plus encore."
+        ],
+        [
+            "Comment le service mesure-t-il la performance?",
+            "La performance est mesurée par des indicateurs tels que le respect des délais des projets, le taux d'innovation, la digitalisation des processus, et la disponibilité du SI."
+        ],
+        [
+            "Quels sont les indicateurs de performance du service?",
+            "La performance est mesurée par des indicateurs tels que le respect des délais des projets, le taux d'innovation, la digitalisation des processus, et la disponibilité du SI."
         ]
     ]
 }
