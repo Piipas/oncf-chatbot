@@ -31,6 +31,7 @@ class ONCFChatBot(ctk.CTk):
 
         self.title("ONCF Assistant")
         self.geometry("620x600")
+        self.resizable(0, 0)
         self._set_appearance_mode("light")
 
         self.background_color = "#EBEBEB"
