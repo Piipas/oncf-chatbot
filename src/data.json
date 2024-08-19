@@ -45,6 +45,10 @@
         [
             "Quels sont les indicateurs de performance du service?",
             "La performance est mesurée par des indicateurs tels que le respect des délais des projets, le taux d'innovation, la digitalisation des processus, et la disponibilité du SI."
+        ],
+        [
+            "L architecture SI de Gestion de l ONCF",
+            "L'architecture SI de Gestion de l'ONCF [image:src/images/architecture.png]"
         ]
     ]
 }

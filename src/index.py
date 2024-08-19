@@ -3,26 +3,8 @@ from chatterbot.conversation import Statement
 import tkinter as tk
 import customtkinter as ctk
 from tkinter import RIGHT, LEFT
-
-
-# def get_response(user_input):
-#     response = chatbot.get_response(user_input)
-#     print(response.confidence)
-#     if float(response.confidence) < 0.40:
-#         response = Statement(text="Désolé, je ne comprends pas cette question.")
-#     return str(response)
-
-
-# def send_message(event=None):
-#     user_input = user_entry.get().lower()
-#     if user_input:
-#         chat_log.config(state=tk.NORMAL)
-#         chat_log.insert(tk.END, f"Vous: {user_input}\n")
-#         user_entry.delete(0, tk.END)
-#         response = get_response(user_input).replace("[newline]", "\n")
-#         chat_log.insert(tk.END, f"Bot: {response}\n")
-#         chat_log.config(state=tk.DISABLED)
-#         chat_log.yview(tk.END)
+import re, os
+from PIL import Image
 
 
 class ONCFChatBot(ctk.CTk):
@@ -37,7 +19,7 @@ class ONCFChatBot(ctk.CTk):
         self.background_color = "#EBEBEB"
         self.user_bubble_background = "#31D190"
         self.bot_bubble_text = "#000000"
-        self.bot_bubble_background = "#F2F2F2"
+        self.bot_bubble_background = "transparent"
         self.user_bubble_text = "#FFFFFF"
 
         # Create main frames
@@ -120,6 +102,17 @@ class ONCFChatBot(ctk.CTk):
         self.user_input.focus()
 
     def insert_message(self, sender, message, tag):
+        image_pattern = r"\[image:(.*?)\]"
+        segments = re.split(image_pattern, message)
+
+        content = []
+        for i, segment in enumerate(segments):
+            if i % 2 == 0:
+                if segment.strip():
+                    content.append({"type": "text", "value": segment.strip()})
+            else:
+                content.append({"type": "image", "value": segment.strip()})
+
         bubble_frame = ctk.CTkFrame(
             self.scrollable_frame,
             corner_radius=10,
@@ -130,30 +123,46 @@ class ONCFChatBot(ctk.CTk):
             ),
         )
 
-        # Styling based on sender
-        if tag == "user":
-            bubble_frame.configure()
-            bubble = ctk.CTkLabel(
-                bubble_frame,
-                text=message,
-                justify="left",
-                wraplength=500,
-                text_color=self.user_bubble_text,
+        for item in content:
+            if item["type"] == "text":
+                bubble_frame.configure()
+                bubble = ctk.CTkLabel(
+                    bubble_frame,
+                    text=item["value"],
+                    justify="left",
+                    wraplength=500,
+                    text_color=(
+                        self.user_bubble_text if tag == "user" else self.bot_bubble_text
+                    ),
+                )
+            elif item["type"] == "image":
+                image_abs_path = os.path.abspath(item["value"])
+                image = ctk.CTkImage(
+                    light_image=Image.open(image_abs_path),
+                    dark_image=Image.open(image_abs_path),
+                    size=(400, 200),
+                )
+                bubble = ctk.CTkLabel(
+                    bubble_frame,
+                    text="",
+                    justify="left",
+                    wraplength=500,
+                    text_color=(
+                        self.user_bubble_text if tag == "user" else self.bot_bubble_text
+                    ),
+                    image=image,
+                )
+
+            # Styling based on sender
+            bubble.pack(
+                padx=10,
+                side=tk.TOP,
+                anchor="e" if tag == "user" else "w",
+                expand=True,
             )
-            bubble.pack(padx=10, pady=10, side=RIGHT, expand=True)
-        else:
-            bubble_frame.configure()
-            bubble = ctk.CTkLabel(
-                bubble_frame,
-                text=message,
-                justify="left",
-                wraplength=500,
-                text_color=self.bot_bubble_text,
-            )
-            bubble.pack(padx=10, pady=10, side=LEFT, expand=True)
 
         bubble_frame.pack(
-            pady=5,
+            pady=15,
             padx=(50, 20) if tag == "user" else (20, 50),
             anchor="e" if tag == "user" else "w",
         )
@@ -186,24 +195,6 @@ class ONCFChatBot(ctk.CTk):
     def _on_mousewheel(self, event):
         self.canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
 
-
-# root = tk.Tk()
-# root.title("ONCF")
-# root.geometry("1000x600")
-
-# chat_log = tk.Text(
-#     root, bd=1, bg="white", height=20, width=50, font=("Arial", 12), state=tk.DISABLED
-# )
-# chat_log.pack(padx=10, pady=10)
-
-# user_entry = tk.Entry(root, bd=1, bg="white", width=50, font=("Arial", 12))
-# user_entry.pack(padx=10, pady=10)
-# user_entry.bind("<Return>", send_message)
-
-# send_button = tk.Button(root, text="Envoyer", width=12, command=send_message)
-# send_button.pack(pady=10)
-
-# root.mainloop()
 
 if __name__ == "__main__":
     app = ONCFChatBot()
