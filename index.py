@@ -1,6 +1,6 @@
-from init import chatbot
-from chatterbot.conversation import Statement
 import tkinter as tk
+from src.init import chatbot
+from chatterbot.conversation import Statement
 import customtkinter as ctk
 from tkinter import RIGHT, LEFT
 import re, os
