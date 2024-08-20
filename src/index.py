@@ -179,13 +179,13 @@ class ONCFChatBot(ctk.CTk):
         return str(response)
 
     def send_message(self, event: None):
-        prompt = self.user_input.get().lower()
+        prompt = self.user_input.get()
 
         if prompt:
             self.insert_message("", prompt, "user")
             self.user_input.delete(0, tk.END)
 
-            response = self.get_response(prompt).replace("[newline]", "\n")
+            response = self.get_response(prompt.lower()).replace("[newline]", "\n")
             self.insert_message("", response, "bot")
 
     def clear_dynamic_frame(self):
