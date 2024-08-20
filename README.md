@@ -4,7 +4,7 @@
 
 1. clone the repository
 ```bash
-$ git clone https://piipas/oncf-chatbot.git
+$ git clone https://github.com/piipas/oncf-chatbot.git
 ```
 2. create the venv directory
 ```bash
