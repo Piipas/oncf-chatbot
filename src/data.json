@@ -1,11 +1,17 @@
 {
     "dataset": [
-        ["Qui est le chef de service?", "Le chef de service est KASMI YAHYA."],
+        [
+            "Qui est le chef de service?",
+            "Le chef de service est KASMI YAHYA."
+        ],
         [
             "Quel est le nom du chef de service?",
             "Le chef de service est KASMI YAHYA."
         ],
-        ["Qui dirige le service?", "Le chef de service est KASMI YAHYA."],
+        [
+            "Qui dirige le service?",
+            "Le chef de service est KASMI YAHYA."
+        ],
         [
             "Pouvez-vous nommer les collaborateurs du service?",
             "Les collaborateurs du service sont BENAMRI ABDELLATIF, ELQABECH ABDELAZIZ, et RAGALA ZAYNABE."
@@ -19,32 +25,48 @@
             "Les collaborateurs du service sont BENAMRI ABDELLATIF, ELQABECH ABDELAZIZ, et RAGALA ZAYNABE."
         ],
         [
-            "Quelles sont les missions principales du service SI Finances et Gestion?",
-            "Les missions principales sont de développer et maintenir les applications informatiques, appliquer les bonnes pratiques pour l'exploitation et la disponibilité, et assurer l'évolution et la sécurité de l'environnement."
+            "Qu'est-ce que le service SI Finances et Gestion ?",
+            "Le service SI Finances et Gestion est une entité chargée de développer et de maintenir les applications informatiques et les services liés à la gestion financière et aux achats au sein de l'ONCF. Il joue un rôle clé dans la transformation digitale en assurant l'évolution et la sécurité de l'environnement des applications."
         ],
         [
-            "Quels sont les objectifs du service SI Finances et Gestion?",
-            "Les missions principales sont de développer et maintenir les applications informatiques, appliquer les bonnes pratiques pour l'exploitation et la disponibilité, et assurer l'évolution et la sécurité de l'environnement."
+            "Quels sont les principaux objectifs du service SI Finances et Gestion ?",
+            "Les principaux objectifs du service SI Finances et Gestion sont de mettre en œuvre les projets conformément au SDSI, de développer l'innovation et le digital, d'optimiser les processus à travers des solutions SI et digitales, et d'assurer la disponibilité et la fiabilité du Plan de Continuité d'Activité (PCA) du SI Finances et Gestion."
         ],
         [
-            "Quel est le rôle du service SI Finances et Gestion?",
-            "Les missions principales sont de développer et maintenir les applications informatiques, appliquer les bonnes pratiques pour l'exploitation et la disponibilité, et assurer l'évolution et la sécurité de l'environnement."
+            "Quelles sont les principales responsabilités du service SI Finances et Gestion ?",
+            "Le service est responsable de :[newline]1. Développer le SI gestion financière et achats en alignement avec le SDSI.[newline]2. Maintenir les applications informatiques et gérer les incidents de niveau 2 et 3.[newline]3. Gérer les prestataires de solutions et des applications déployées.[newline]4. Produire des dossiers d'exploitation, de support et d'assistance.[newline]5. Archiver les composants des systèmes en production.[newline]6. Surveiller les performances, la qualité et la sécurité du SI.[newline]7. Tester et exécuter le PCA en collaboration avec les entités concernées."
         ],
         [
-            "Quelles sont les responsabilités du service SI Finances et Gestion?",
-            "Le service est responsable du développement du SI en alignement avec le SDSI, de la maintenance des applications informatiques, de la gestion des prestataires de solutions, de la production de la documentation de support, de l'archivage des composants système, de la surveillance des performances, et plus encore."
+            "Quels outils ou logiciels sont utilisés par le service ?",
+            "L'information spécifique sur les outils ou logiciels utilisés par le service n'a pas été fournie dans les détails initiaux. Cependant, on peut supposer que le service utilise divers outils de gestion des systèmes d'information, de sécurité informatique, et de gestion de la performance."
         ],
         [
-            "Quelles tâches le service doit-il accomplir?",
-            "Le service est responsable du développement du SI en alignement avec le SDSI, de la maintenance des applications informatiques, de la gestion des prestataires de solutions, de la production de la documentation de support, de l'archivage des composants système, de la surveillance des performances, et plus encore."
+            "Qui sont les principaux interlocuteurs du service SI Finances et Gestion ?",
+            "Les principaux interlocuteurs du service sont les entités internes et externes collaborant sur les projets SI Finances et Gestion, ainsi que les prestataires de solutions et d'applications déployées."
         ],
         [
-            "Comment le service mesure-t-il la performance?",
-            "La performance est mesurée par des indicateurs tels que le respect des délais des projets, le taux d'innovation, la digitalisation des processus, et la disponibilité du SI."
+            "Quels sont les principaux projets en cours dans le service SI Finances et Gestion ?",
+            "L'information sur les projets spécifiques en cours n'a pas été fournie. Cependant, on sait que le service travaille sur des projets liés à la transformation digitale, au développement et à la maintenance des applications de gestion financière et achats."
         ],
         [
-            "Quels sont les indicateurs de performance du service?",
-            "La performance est mesurée par des indicateurs tels que le respect des délais des projets, le taux d'innovation, la digitalisation des processus, et la disponibilité du SI."
+            "Quels sont les défis actuels du service SI Finances et Gestion ?",
+            "Les défis peuvent inclure la gestion de l'évolution et de la sécurité des applications, l'alignement avec les objectifs de transformation digitale, la gestion efficace des prestataires, et l'assurance de la disponibilité du SI."
+        ],
+        [
+            "Quels sont les indicateurs de performance clés suivis par le service ?",
+            "Les indicateurs de performance clés suivis par le service incluent :[newline]1. Le taux de respect des délais des projets.[newline]2. Le taux de réalisation des systèmes innovants.[newline]3. Le taux de digitalisation des processus.[newline]4. Le taux de disponibilité du SI Finances et Gestion."
+        ],
+        [
+            "Quels types de formations ou d'accompagnements sont disponibles pour les employés dans le cadre du SI Finances et Gestion ?",
+            "L'information spécifique sur les formations ou accompagnements disponibles n'a pas été fournie. Généralement, des formations sur les systèmes d'information, la sécurité informatique, et la gestion des applications peuvent être offertes."
+        ],
+        [
+            "Quels sont les processus de gestion des risques financiers au sein du service ?",
+            "L'information spécifique sur les processus de gestion des risques financiers n'a pas été fournie, mais le service veille à la sécurité et à la disponibilité des applications de gestion financière, ce qui pourrait inclure des processus de gestion des risques."
+        ],
+        [
+            "Quelles sont les perspectives d'évolution professionnelle au sein du service SI Finances et Gestion ?",
+            "L'information spécifique sur les perspectives d'évolution professionnelle n'a pas été fournie, mais les employés travaillant dans le service SI Finances et Gestion pourraient évoluer vers des rôles de gestion de projets SI, de sécurité informatique, ou de transformation digitale."
         ],
         [
             "L architecture SI de Gestion de l ONCF",
